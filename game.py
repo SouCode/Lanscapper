@@ -78,6 +78,9 @@ def main():
                     print("You hired a team of starving students!")
                     print(f"You currently have ${total_earnings}")
 
+            if has_students and total_earnings >= 1000:
+                print("Congratulations! You have a team of starving students and $1000. You've won the game!")
+                break
             
             continue_working = input("Do you want to continue working? (yes or no): ").lower()
             if continue_working != 'yes':
